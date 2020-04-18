@@ -98,6 +98,10 @@
     display: none;
   }
 
+  .hidden-fund {
+    display: none;
+  }
+
   .col-sm-1 {
     grid-column: span 1;
   }
