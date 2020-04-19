@@ -12,3 +12,8 @@
   font-family: "maquette";
   src: url("font/maquette.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "maquette bold";
+  src: url("font/WorkSans-ExtraBold.ttf") format("truetype");
+}

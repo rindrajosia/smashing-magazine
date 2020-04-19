@@ -329,7 +329,8 @@ main {
 }
 
 .gallery-item,
-.gallery-deals {
+.gallery-deals,
+.gallery-latest {
   width: 100%;
   height: 100%;
 }
@@ -351,7 +352,8 @@ main {
 }
 
 .gallery-item .image img,
-.gallery-deals .image img {
+.gallery-deals .image img,
+.gallery-latest .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -367,7 +369,7 @@ main {
   padding-right: 20px;
 }
 
-.gallery-item .author {
+.author {
   font-family: maquette, Arial, serif;
   padding: 0 4px;
   font-size: 13px;
@@ -534,6 +536,99 @@ main {
   }
 }
 
+/* Apps */
+
+.app-item {
+  margin-top: 15px;
+}
+
+.image-relative {
+  position: relative;
+}
+
+.header-apps {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.description-app {
+  margin-left: 5px;
+}
+
+.description-app h5 {
+  font-family: maquette, Arial, serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  color: white;
+}
+
+.description-app h3 {
+  font-family: maquette, Arial, serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+}
+
+.header-latest-header {
+  margin-top: 5px;
+  width: 100%;
+}
+
+.div-latest-header {
+  width: calc(100% - 100px);
+}
+
+.div-latest-header h5 {
+  font-family: shentox, serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  color: rgb(255, 68, 34);
+}
+
+.div-latest-header h4 {
+  margin-top: 5px;
+  font-family: "maquette", Arial, serif;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(255, 68, 34);
+}
+
+.header-latest-header img {
+  display: block;
+  width: 95px;
+  height: 94px;
+}
+
+.list-latest-header li {
+  margin-top: 10px;
+}
+
+.list-latest-header li::before {
+  content: "•";
+  padding-right: 8px;
+  color: rgb(255, 68, 34);
+}
+
+.list-latest-header li a {
+  font-family: "maquette", Arial, serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 20px;
+  color: rgb(91, 91, 91);
+}
+
+.list-latest-header li a:hover {
+  color: black;
+}
+
 /* Latest deals */
 
 .deals {
@@ -673,8 +768,14 @@ small {
     overflow: hidden;
   }
 
+  .gallery-latest .image {
+    width: 100%;
+    height: 100%;
+  }
+
   .gallery-item .image img,
-  .gallery-deals .image img {
+  .gallery-deals .image img,
+  .gallery-latest .image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
